@@ -1,0 +1,37 @@
+[
+
+    {
+        "latitude":36.769569,
+        "longitude":34.566636,
+        "name":"muhamed",
+        "content":"muhamed place"
+
+    },
+
+    {
+        "latitude":36.773969,
+        "longitude":34.543987,
+        "name":"ali",
+        "content":"ali place"
+
+
+    },
+
+    {
+        "latitude":36.802839,
+        "longitude":34.637707,
+        "name":"samer",
+        "content":"samer place"
+
+
+    },
+
+    {
+        "latitude":36.758292,
+        "longitude":34.547617,
+        "name":"loka",
+        "content":"loka place"
+
+
+    }
+]

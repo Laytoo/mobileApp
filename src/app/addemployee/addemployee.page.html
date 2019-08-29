@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>addemployee</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="savedata()">
+    <ion-item>
+      <ion-label>First Name:</ion-label>
+      <ion-input type="text" [(ngModel)]="data.fname" name="name"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+        <ion-label>Last Name:</ion-label>
+        <ion-input type="text" [(ngModel)]="data.lname" name="lname"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label>Age:</ion-label>
+          <ion-input type="number" [(ngModel)]="data.age" name="age"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Gender:</ion-label>
+            <ion-select [(ngModel)]="data.gender" name="gender">
+              <ion-item-option value="f">Female</ion-item-option>
+              <ion-item-option value="m">Male</ion-item-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>Salary:</ion-label>
+              <ion-input type="number" [(ngModel)]="data.salary" name="salary"></ion-input>
+            </ion-item>
+
+          <ion-item>
+            <ion-label>Date</ion-label>
+            <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="data.date" name="date"></ion-datetime>
+          </ion-item>
+
+          <button type="submit">Save</button>
+
+  </form>
+
+</ion-content>

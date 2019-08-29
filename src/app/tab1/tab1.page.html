@@ -1,0 +1,114 @@
+<!-- <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Tab Two
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-button color="success" fill="outline" (click)="gotomain()">click</ion-button>
+    <ion-card>
+      <h2>{{person.name}}</h2>
+      <ion-card-content>
+        <ion-card-title>
+            <h2>{{person.lname}}</h2>
+        </ion-card-title>
+        <p>
+          hello my name is muhamed and this is my first application in ionic 4
+        </p>
+        
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-list>
+        <ion-item-sliding *ngFor="let person of persons | async">
+          <ion-item>
+            <ion-avatar slot="start">
+              <ion-icon name="person" size='large'></ion-icon>
+            </ion-avatar>
+            <ion-label>{{person.lname}}</ion-label>
+            <h2>{{person.age}}</h2>
+            <p>{{person.name}}
+              -- Department :{{person.name}}
+            </p>
+          </ion-item>
+          <ion-item-options side="start">
+            <button color="primary">
+              <ion-icon name="text"></ion-icon>
+              Edit
+            </button>
+            <button color="secondary">
+              <ion-icon name="call"></ion-icon>
+              Call
+            </button>
+          </ion-item-options>
+          <ion-item-options side="end">
+            <ion-button color="danger" fill="outline" size="small">
+              <ion-icon name="Delete"></ion-icon>
+              Delete
+            </ion-button>
+          </ion-item-options>
+        </ion-item-sliding>
+  
+        <ion-item-sliding>
+            <ion-item>
+              <ion-label>Item</ion-label>
+            </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+  
+        </ion-list>
+  </ion-content>
+   -->
+   <ion-header>
+    <ion-toolbar>
+      <ion-title>Map with barcode</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-item>
+        <div id="map" #map ></div>
+        </ion-item>
+<ion-list>
+<!--         <ion-item>
+ -->
+
+            <ion-item>
+               
+                <ion-label>
+                    <h2>text :{{bar.text}}</h2>
+                  <p>format :{{bar.format}}</p>
+                  <p>cancelled :{{bar.cancelled}}</p>
+                </ion-label>
+
+              </ion-item>
+              <ion-button (click)="scan()" >scan barcode</ion-button>
+
+
+<!-- <ion-label><h2>cancelled :{{bar.cancelled}}</h2><br/></ion-label>
+        
+ <ion-label><h2>format :{{bar.format}}</h2><br/></ion-label>
+
+  <ion-label><h2>text :{{bar.text}}</h2></ion-label> 
+
+  <ion-button (click)="scan()" >scan barcode</ion-button>
+
+       
+          
+        </ion-item> -->
+
+
+        <ion-item>
+     
+          <ion-input type="text" [(ngModel)]="encodedata" placeholder="Write Here"></ion-input>
+          <ion-button (click)="encode()">Encode</ion-button>
+
+        </ion-item>
+
+      </ion-list>
+  
+  </ion-content>
