@@ -63,7 +63,7 @@ this.sqlite.create({
   .then((db: SQLiteObject) => {
 
 
-    db.executeSql('create table Employees(id INTEGER PRIMARY KEY,name VARCHAR(32),lname TEXT,age INT,gender TEXT,salary INT,date TEXT)', {})
+    db.executeSql('create table Employees(id INTEGER PRIMARY KEY,name VARCHAR(32),lname TEXT,age INT,gender TEXT,salary INT,date TEXT)', [])
     .then(() => console.log('Executed SQL'))
     .catch(e => console.log(e));
 
